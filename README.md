@@ -110,12 +110,12 @@ For Question 3. **How to recommend coupons/offers to new customers?**
 
 I used the Machine Learning approach to recommend offers to new users. For this, I set a rule for sending out coupons to new users.
 
-- A person with no demographic data is expected to spend \\$1.71, so we can send out an **Informational offer or No offer!**
-- If a user is expected to spend < \\$3 or > \\$22, send out an **Informational offer or No offer!**
-- If a user is expected to spend ≥ \\$3 and < \\$5, send out the **\\$5 coupon offers.**
-- If a user is expected to spend ≥ \\$5 and < \\$7, send out the **\\$7 coupon offer.**
-- If a user is expected to spend ≥ \\$7 and < \\$10, send out the **\\$10 coupons.**
-- Lastly, If a user is expected to spend ≥ \\$10 and < \\$20, send out the **\\$20 coupon.**
+- A person with no demographic data is expected to spend \$1.71, so we can send out an **Informational offer or No offer!**
+- If a user is expected to spend < \$3 or > \$22, send out an **Informational offer or No offer!**
+- If a user is expected to spend ≥ \$3 and < \$5, send out the **\$5 coupon offers.**
+- If a user is expected to spend ≥ \$5 and < \$7, send out the **\$7 coupon offer.**
+- If a user is expected to spend ≥ \$7 and < \$10, send out the **\$10 coupons.**
+- Lastly, If a user is expected to spend ≥ \$10 and < \$20, send out the **\$20 coupon.**
 
 For example,
 
@@ -129,9 +129,9 @@ person_demo = {
 predict_expense(person_demo, final_model)
 >>> array([ 3.78, 10.66, 22.26], dtype=float32)
 ```
-- Person 1: gender = Male, income = 60000.00, age = 36. Expected to spend \\$3.78, so send out a **\\$5 coupon.**
-- Person 2: gender = Female, income = 72000.00, age = 26. Expected to spend \\$10.66, so send out a **\\$20 coupon.**
-- Person 3: gender = Other, income = 80000.00, age = 30. Expected to spend \\$22.26, so send out a **Informational coupon/no coupon at all!**
+- Person 1: gender = Male, income = 60000.00, age = 36. Expected to spend \$3.78, so send out a **\$5 coupon.**
+- Person 2: gender = Female, income = 72000.00, age = 26. Expected to spend \$10.66, so send out a **\$20 coupon.**
+- Person 3: gender = Other, income = 80000.00, age = 30. Expected to spend \$22.26, so send out a **Informational coupon/no coupon at all!**
 
 ## Future Work
 
